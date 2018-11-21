@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Aliko Translator</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="css/business-casual.css" rel="stylesheet">
+    <script src="vendor/jquery/artyom.window.min.js"></script>
+    <script src="vendor/jquery/artyom.js"></script>
+    <script src="vendor/jquery/artyom.min.js"></script>
+    <script onload="" src="js/popup.js"></script>
+
+  </head>
+
+
+  <body>
+    <div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block">Aliko Translator</div>
+    <div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-5 d-none d-lg-block">Faculty of Computer Science | University Maalaysia Sarawak</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+            </li>
+			<li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="wordlist.html">Wordlist</a>
+			<li class="nav-item px-lg-4">
+                <a class="nav-link text-uppercase text-expanded" href="texttotext.html">Text-To-Text</a>
+              </li>
+              <li class="nav-item  px-lg-4">
+                <a class="nav-link text-uppercase text-expanded" href="speechtotext.html">Speech-To-Text</a>
+              </li>
+              <li class="nav-item px-lg-4">
+                <a class="nav-link text-uppercase text-expanded" href="texttospeech.html">Text-To-Speech</a>
+              </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--// Navigation -->
+
+    <div class="container">
+
+      <!--This is Table-->
+      <div class="bg-faded p-4 my-4">
+        <hr class="divider">
+        <h2 class="text-center text-lg text-uppercase my-0">List of
+          <strong>Words</strong>
+        </h2>
+        <hr class="divider">
+        <div class="row">
+          <div class="container-fluid">
+
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <br>
+                <table class="table table-striped table-hover">
+                      <tr>
+                        <th>Local Words</th>
+                        <th>English Translation</th>
+                        <th>Play Local Words</th>
+                        <th>Play English Words</th>
+                        <th>Words Information</th>
+                      </tr>
+                      <tr>
+                        <td id="malay-content-1">Kenelalak</td>
+                        <td id="english-content-1">Known</td>
+                        <td><a class="btn btn-primary btn-md" onclick="local_1()">Play</a></td>
+                        <td><a class="btn btn-success" onclick="english_1()">Play</a></td>
+                        <td><a id="myImg" class="btn btn-info btn-md" onclick="modal_1()">Info</a></td>
+                      </tr>
+                      <tr>
+                        <td id="malay-content-2">Kejinih</td>
+                        <td id="english-content-2">Very Beautiful</td>
+                        <td><a class="btn btn-primary btn-md" onclick="local_2()">Play</a></td>
+                        <td><a class="btn btn-success" onclick="english_2()">Play</a></td>
+                        <td><a id="myImg" class="btn btn-info btn-md" onclick="modal_2()">Info</a></td>
+                      </tr>
+                      <tr>
+                        <td id="malay-content-3">Pepikir</td>
+                        <td id="english-content-3">Thought</td>
+                        <td><a class="btn btn-primary btn-md" onclick="local_3()">Play</a></td>
+                        <td><a class="btn btn-success" onclick="english_3()">Play</a></td>
+                        <td><a id="myImg" class="btn btn-info btn-md" onclick="modal_3()">Info</a></td>
+                      </tr>
+                      <tr>
+                        <td id="malay-content-4">Pepela</td>
+                        <td id="english-content-4">Paddle</td>
+                        <td><a class="btn btn-primary btn-md" onclick="local_4()">Play</a></td>
+                        <td><a class="btn btn-success" onclick="english_4()">Play</a></td>
+                        <td><a id="myImg" class="btn btn-info btn-md" onclick="modal_4()">Info</a></td>
+                      </tr>
+                      <tr>
+                        <td id="malay-content-5">Belajer</td>
+                        <td id="english-content-5">Learning</td>
+                        <td><a class="btn btn-primary btn-md" onclick="local_5()">Play</a></td>
+                        <td><a class="btn btn-success" onclick="english_5()">Play</a></td>
+                        <td><a id="myImg" class="btn btn-info btn-md" onclick="modal_5()">Info</a></td>
+                      </tr>
+                      <tr>
+                        <td id="malay-content-6">Najer</td>
+                        <td id="english-content-6">Taught</td>
+                        <td><a class="btn btn-primary btn-md" onclick="local_6()">Play</a></td>
+                        <td><a class="btn btn-success" onclick="english_6()">Play</a></td>
+                        <td><a id="myImg" class="btn btn-info btn-md" onclick="modal_6()">Info</a></td>
+                      </tr>
+                      <tr>
+                        <td id="malay-content-7">Menibah</td>
+                        <td id="english-content-7">Calling</td>
+                        <td><a class="btn btn-primary btn-md" onclick="local_7()">Play</a></td>
+                        <td><a class="btn btn-success" onclick="english_7()">Play</a></td>
+                        <td><a id="myImg" class="btn btn-info btn-md" onclick="modal_7()">Info</a></td>
+                      </tr>
+                      <tr>
+                        <td id="malay-content-8">Jalak</td>
+                        <td id="english-content-8">One</td>
+                        <td><a class="btn btn-primary btn-md" onclick="local_8()">Play</a></td>
+                        <td><a class="btn btn-success" onclick="english_8()">Play</a></td>
+                        <td><a id="myImg" class="btn btn-info btn-md" onclick="modal_8()">Info</a></td>
+                      </tr>
+                    </table>
+              </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+      <!--End Table-->
+
+
+    </div>
+    <!-- /.container -->
+
+    <!-- The Modal1 -->
+    <div id="myModal" class="modal">
+      <img src="img/word1.jpg"class="modal-content">
+      <span id="img01" class="close">&times;</span>
+    </div>
+
+    <!-- The Modal2 -->
+    <div id="myModal2" class="modal">
+      <img src="img/word2.jpg"class="modal-content">
+      <span id="img02" class="close">&times;</span>
+    </div>
+
+    <!-- The Modal3 -->
+    <div id="myModal3" class="modal">
+      <img src="img/word3.jpg"class="modal-content">
+      <span id="img03" class="close">&times;</span>
+    </div>
+
+    <!-- The Modal4 -->
+    <div id="myModal4" class="modal">
+      <img src="img/404.jpg"class="modal-content">
+      <span id="img04" class="close">&times;</span>
+    </div>
+
+    <!-- The Modal5 -->
+    <div id="myModal5" class="modal">
+      <img src="img/word5.jpg"class="modal-content">
+      <span id="img05" class="close">&times;</span>
+    </div>
+
+    <!-- The Modal6 -->
+    <div id="myModal6" class="modal">
+      <img src="img/word6.jpg"class="modal-content">
+      <span id="img06" class="close">&times;</span>
+    </div>
+
+    <!-- The Modal7 -->
+    <div id="myModal7" class="modal">
+      <img src="img/word7.jpg"class="modal-content">
+      <span id="img07" class="close">&times;</span>
+    </div>
+
+    <!-- The Modal8 -->
+    <div id="myModal8" class="modal">
+      <img src="img/word8.jpg"class="modal-content">
+      <span id="img08" class="close">&times;</span>
+    </div>
+
+    <footer class="bg-faded text-center py-5">
+      <div class="container">
+        <p class="m-0">Copyright &copy; Your Website 2017</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- T to S core Content -->
+    <script>
+    //word 1
+    function local_1()
+    {
+      var element = document.getElementById("malay-content-1");
+      var elementHtml = element.innerText;
+      artyom.say(elementHtml);
+    }
+
+    function english_1()
+    {
+      var element = document.getElementById("english-content-1");
+      var elementHtml = element.innerText;
+      artyom.say(elementHtml);
+    }
+
+    //word 2
+    function local_2()
+    {
+      var element = document.getElementById("malay-content-2");
+      var elementHtml = element.innerText;
+      artyom.say(elementHtml);
+    }
+
+    function english_2()
+    {
+      var element = document.getElementById("english-content-2");
+      var elementHtml = element.innerText;
+      artyom.say(elementHtml);
+    }
+
+    //word 3
+    function local_3()
+    {
+      var element = document.getElementById("malay-content-3");
+      var elementHtml = element.innerText;
+      artyom.say(elementHtml);
+    }
+
+    function english_3()
+    {
+      var element = document.getElementById("english-content-3");
+      var elementHtml = element.innerText;
+      artyom.say(elementHtml);
+    }
+
+    //word 4
+    function local_4()
+    {
+      var element = document.getElementById("malay-content-4");
+      var elementHtml = element.innerText;
+      artyom.say(elementHtml);
+    }
+
+    function english_4()
+    {
+      var element = document.getElementById("english-content-4");
+      var elementHtml = element.innerText;
+      artyom.say(elementHtml);
+    }
+
+    //word 5
+    function local_5()
+    {
+      var element = document.getElementById("malay-content-5");
+      var elementHtml = element.innerText;
+      artyom.say(elementHtml);
+    }
+
+    function english_5()
+    {
+      var element = document.getElementById("english-content-5");
+      var elementHtml = element.innerText;
+      artyom.say(elementHtml);
+    }
+
+    //word 6
+    function local_6()
+    {
+      var element = document.getElementById("malay-content-6");
+      var elementHtml = element.innerText;
+      artyom.say(elementHtml);
+    }
+
+    function english_6()
+    {
+      var element = document.getElementById("english-content-6");
+      var elementHtml = element.innerText;
+      artyom.say(elementHtml);
+    }
+
+    //word 7
+    function local_7()
+    {
+      var element = document.getElementById("malay-content-7");
+      var elementHtml = element.innerText;
+      artyom.say(elementHtml);
+    }
+    function english_7()
+    {
+      var element = document.getElementById("english-content-7");
+      var elementHtml = element.innerText;
+      artyom.say(elementHtml);
+    }
+
+    //word 8
+    function local_8()
+    {
+      var element = document.getElementById("malay-content-8");
+      var elementHtml = element.innerText;
+      artyom.say(elementHtml);
+    }
+
+    function english_8()
+    {
+      var element = document.getElementById("english-content-8");
+      var elementHtml = element.innerText;
+      artyom.say(elementHtml);
+    }
+    </script>
+  </body>
+
+</html>
