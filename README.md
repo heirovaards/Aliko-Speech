@@ -57,6 +57,20 @@ Start Bootstrap was created by and is maintained by **[David Miller](http://davi
 
 Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
+## Function
+- Home Page
+- About US
+- Wordlist (with speech synthesize)
+- Text to Speech
+- Speech to Text
+
+## Supporting Library
+- Bootstrap
+- Artyom JS for Speech regognition
+
+## How to Use
+- Pull and run through xamppm, run on Google Chrome
+
 ## Copyright and License
 
 Copyright 2013-2017 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-business-casual/blob/gh-pages/LICENSE) license.
